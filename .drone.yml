@@ -1,0 +1,12 @@
+kind: pipeline
+name: AVC
+
+steps:
+- name: ROM
+  image: ubuntu:20.04
+  cpu: 8
+  memory: 32G
+  commands:
+  - apt install
+  - df -h
+  - free
